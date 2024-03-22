@@ -4,7 +4,7 @@ const calculateBill = () => {
   let tip = document.getElementById('tipInput')
   tip = Number(tip.value)
   let c = document.getElementById('perPersonTotal')
-  c.innerText = `$${(tbil + ((tip * tbil) / 100)) / Number(people)}`
+  c.innerText = `$${((tbil + ((tip * tbil) / 100)) / Number(people)).toFixed(2)}
 
 }
 let people = 1
